@@ -1,5 +1,10 @@
 var React = require('react');
 import BasePage from './base-page.js';
+import $ from 'jquery';
+
+var currentBgIndex = 1;
+var MIN_BG_INDEX = 1;
+var MAX_BG_IMAGES = 4;
 
 var Home = React.createClass({
   render:function(){
@@ -11,6 +16,9 @@ var Home = React.createClass({
           <span className="ri-cta-button cta-facebook-login"> <i className="fa fa-facebook"></i> Sign in with Facebook</span>
           <span className="ri-cta-button cta-email-login"><i className="fa fa-envelope"></i>Sign up with Email</span>
         </div>
+
+        <div className="ri-bg-arrow ri-bg-arrow-left"></div>
+        <div className="ri-bg-arrow ri-bg-arrow-right"></div>
 
         <div className="ri-discover-actions">
           <div className="ri-discover-badge">
@@ -28,6 +36,21 @@ var Home = React.createClass({
         </div>
       </BasePage>
     );
+  },
+
+  showNextBackground:function(){
+    currentBgIndex >= MAX_BG_IMAGES ? currentBgIndex = MIN_BG_INDEX : currentBgIndex++;
+    this.addBackgroundClass(currentBgIndex);
+  },
+
+  showPrevBackground:function(){
+    currentBgIndex <= MIN_BG_INDEX ? currentBgIndex = MAX_BG_IMAGES : currentBgIndex--;
+    this.addBackgroundClass(currentBgIndex);
+  },
+
+  addBackgroundClass:function(bgIndex){
+    $('body').removeClass();
+    $('body').addClass('ri-app-bg-' + bgIndex);
   }
 });
 
