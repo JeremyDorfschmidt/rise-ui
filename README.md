@@ -8,6 +8,9 @@ The development server is setup using Webpack
 > npm start
 ```
 
+Run the app by going to `https://localhost:8080/` in your browser
+
+
 Tests
 =
 
