@@ -1,0 +1,104 @@
+.ri-category-list{
+
+  .ri-category-list-item{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+    border-radius: 5px;
+    background: fade(#FFF,35%);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+
+    //border: 2px solid fade(#FFF,0%);
+    //transition: 300ms border ease;
+
+    &:hover{
+      //border-color:@appHighlightColor ;
+      cursor: pointer;
+
+      .category-title{
+        //bottom: 70px;
+        //transform: scale(1.1);
+      }
+    }
+
+    .category-image-wrapper{
+      border: 3px solid #FFF;
+      border-radius: 50%;
+      margin: 20px auto 0;
+      width: 170px;
+      height: 170px;
+      overflow: hidden;
+
+      &:hover{
+        .category-image{
+          //margin-top: -10px;
+          width: 110%;    //Image zoom effect
+          height: 110%;
+          margin:-5px 0 0 -5px;
+        }
+      }
+
+      .category-image{
+        border: 1px dashed red;
+        width: 100%;
+        height: 100%;
+        transition: 200ms all ease;
+        background-size:   cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &.cat-exterior{
+          background-image: url("../images/cat-exerior.png");
+        }
+
+        &.cat-interior{
+          background-image: url("../images/cat-interior.png");
+        }
+
+        &.cat-construction{
+          background-image: url("../images/cat-construction.png");
+        }
+
+        &.cat-windows-doors{
+          background-image: url("../images/cat-windows-doors.png");
+        }
+
+        &.cat-landscaping{
+          background-image: url("../images/cat-landscaping.png");
+        }
+
+        &.cat-electrical{
+          background-image: url("../images/cat-electrical.png");
+        }
+
+        &.cat-plumbing{
+          background-image: url("../images/cat-plumbing.png");
+        }
+
+        &.cat-insulation{
+          background-image: url("../images/cat-insulation.png");
+        }
+      }
+    }
+
+    .category-title{
+      transition: 300ms all ease;
+      transition-delay:50ms;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: fade(#FFF,35%);
+
+      text-align: center;
+      font-size: 21px;
+      font-weight: lighter;
+      padding: 10px 0;
+      color: #404040;
+    }
+  }
+}
