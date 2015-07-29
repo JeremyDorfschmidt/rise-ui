@@ -7,8 +7,9 @@
   left: 0;
   right: 0;
 
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.25);
   height: 50px;
+  border-bottom: 1px solid #FFF;
   background: #ffffff;
   background: linear-gradient(to bottom,  fade(#FFF,88%) 0% ,fade(#FFF,56%) 100%);
 
@@ -28,7 +29,7 @@
 
   .ri-nav-menu{
     display: inline-block;
-    margin: 15px 0 0 0;
+    margin: 16px 0 0 0;
 
     a{
       display: inline-block;
@@ -44,78 +45,4 @@
       }
     }
   }
-
-  .search-bar{
-    float: right;
-    margin: 10px 20px 0 0;
-    display: inline-block;
-
-    .search-input{
-      border: 1px solid #888;
-      padding: 5px 10px;
-      border-radius: 20px;
-      background: none;
-      transition: 250ms border ease;
-
-      &:focus{
-        outline: none;
-        border-color: @appHighlightColor;
-      }
-    }
-  }
-
-  /*//display: inline-block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
-  padding: 10px;
-  height: 30px;
-
-  background: #ffffff;
-  background: linear-gradient(to bottom,  fade(#FFF,88%) 0% ,fade(#FFF,56%) 100%);
-  border-bottom: 1px solid #FFF;
-
-  .ri-nav-menu{
-    border: 1px dashed;
-    display: inline-block;
-  }
-
-  a{
-    display: inline-block;
-    margin: 8px 15px 0 0;
-    color: #555;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 0 5px 15px 5px;
-    text-transform: uppercase;
-
-    &.active{
-      border-bottom: 3px solid @appHighlightColor;
-    }
-  }
-
-  .logo{
-
-  }
-
-  .search-bar{
-    float: right;
-    margin-right: 15px;
-  }
-
-  .search-input{
-    border: 1px solid #888;
-    padding: 5px 10px;
-    border-radius: 20px;
-    background: none;
-    transition: 250ms border ease;
-
-    &:focus{
-      outline: none;
-      border-color: @appHighlightColor;
-    }
-  }*/
 }

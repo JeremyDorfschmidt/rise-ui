@@ -1,0 +1,25 @@
+.search-bar{
+  float: right;
+  margin: 10px 20px 0 0;
+  display: inline-block;
+
+  i{
+    display: inline-block;
+    margin: 0px -30px 0 0;
+  }
+  .search-input{
+    border: 2px solid #999;
+    padding: 5px 20px 5px 40px;
+    border-radius: 20px;
+    width: 100px;
+    background: none;
+    transition: 250ms all ease;
+
+    &:focus{
+      outline: none;
+      width: 150px;
+      border-color: @appHighlightColor;
+      box-shadow: 0 0 5px 2px fade(@appHighlightColor,10%);
+    }
+  }
+}
