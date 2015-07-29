@@ -19,7 +19,7 @@ Unit tests are run using Jest.
 
 Deploy
 =
-Assets are copied into the dist directory
+Assets are copied into the `dist` directory
 
 ```
 > npm run build
