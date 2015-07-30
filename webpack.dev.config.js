@@ -1,6 +1,6 @@
 'use strict';
 
-var config = require('./webpack.base.config.js');
+var config = require('./webpack.base.dev.config.js');
 
 config.devServer = {
   contentBase: 'src',

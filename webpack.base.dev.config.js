@@ -11,7 +11,7 @@ module.exports = {
   output: {
     path: './dist/js',
     pathInfo: true,
-    publicPath: './js/',
+    publicPath: '/js/',
     filename: 'main.js',
     css: 'style.css'
   },
