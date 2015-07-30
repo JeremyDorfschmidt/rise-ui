@@ -15,10 +15,10 @@ var MainNav = React.createClass({
         </span>
 
         <div ref="menu" className="ri-nav-menu">
-          <Link to="home">Home</Link>
-          <Link to="photos">Photos</Link>
-          <Link to="products">Products</Link>
-          <Link to="techniques">Techniques</Link>
+          <Link to="home" onClick={this.onMenuITemClick}>Home</Link>
+          <Link to="photos" onClick={this.onMenuITemClick}>Photos</Link>
+          <Link to="products" onClick={this.onMenuITemClick}>Products</Link>
+          <Link to="techniques" onClick={this.onMenuITemClick}>Techniques</Link>
         </div>
 
         <SearchBar/>
@@ -29,6 +29,10 @@ var MainNav = React.createClass({
 
   toggleMobileMenu:function(){
     $(this.refs.menu.getDOMNode()).toggleClass('mobile-menu-visible');
+  },
+
+  onMenuITemClick:function(){
+    $(this.refs.menu.getDOMNode()).removeClass('mobile-menu-visible');
   }
 });
 
