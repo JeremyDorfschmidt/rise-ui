@@ -52,43 +52,6 @@ var Home = React.createClass({
           </div>
 
         </div>
-
-      {/*
-       <div className="row">
-       <div className="col-md-12">
-       <div className="ri-login-actions">
-       <span className="ri-cta-button cta-facebook-login"> <i className="fa fa-facebook"></i> Sign in with Facebook</span>
-       <span className="ri-cta-button cta-email-login"><i className="fa fa-envelope"></i>Sign up with Email</span>
-       </div>
-       </div>
-       </div>
-      */}
-
-
-      {/*<div className="row">
-          <div className="col-md-12">
-
-            <div className="ri-discover-actions">
-              <div className="ri-discover-badge">
-                <i className="fa fa-lightbulb-o"></i>
-                <span className="ri-discover-badge-text">Get Inspired</span>
-              </div>
-              <div className="ri-discover-badge">
-                <i className="fa fa-usd"></i>
-                <span className="ri-discover-badge-text">Save Money</span>
-              </div>
-              <div className="ri-discover-badge">
-                <i className="fa fa-users"></i>
-                <span className="ri-discover-badge-text">Find a Pro</span>
-              </div>
-
-            </div>
-          </div>
-        </div>*/}
-
-      {/*<div className="ri-bg-arrow ri-bg-arrow-left"></div>
-        <div className="ri-bg-arrow ri-bg-arrow-right"></div>*/}
-
       </BasePage>
     );
   },
@@ -106,6 +69,13 @@ var Home = React.createClass({
   addBackgroundClass:function(bgIndex){
     $('body').removeClass();
     $('body').addClass('ri-app-bg-' + bgIndex);
+  },
+
+  componentDidMount:function(){
+    $('.ri-app-bg-overlay').addClass('is-visible');
+  },
+  componentWillUnmount:function(){
+    $('.ri-app-bg-overlay').removeClass('is-visible');
   }
 });
 

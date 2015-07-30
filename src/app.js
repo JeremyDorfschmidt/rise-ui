@@ -22,6 +22,7 @@ var App = React.createClass({
   render() {
     return (
       <div className="ri-app-wrapper">
+        <div className="ri-app-bg-overlay">Overlay here</div>
 
         <MainNav/>
 

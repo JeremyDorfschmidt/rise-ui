@@ -31,3 +31,25 @@ body{
 .ri-app-wrapper{
 
 }
+
+//Overlay to darken background images
+.ri-app-bg-overlay{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: fade(#000,12%);
+  transition: 300ms all;
+  opacity: 0;
+
+  &.is-visible{
+    opacity: 1;
+  }
+}
+
+//Modal overlay
+.ri-app-modal-overlay{
+
+}
+
