@@ -1,7 +1,7 @@
 @import "variables";
 .ri-home-page{
-  text-align: center;
 
+  text-align: center;
   .ri-tagline{
     font-size: 70px;
     color: #FFF;
@@ -9,108 +9,80 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
   }
 
-  .ri-login-actions{
-    margin: 20px 0;
+  .ri-cta-button{
+    @facebookBlue:#3B5998;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: #FFF;
+    opacity: 0.9;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);;
+    transition: 250ms all ease;
+    margin-bottom: 15px;
 
-    .ri-cta-button{
-      @facebookBlue:#3B5998;
-      display: inline-block;
-      padding: 20px 40px;
-      border-radius: 5px;
-      color: #FFF;
-      opacity: 0.9;
-      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);;
-      transition: 250ms all ease;
+    &:hover{
+      background: fade(#FFF,80%) !important;
+      color: @appHighlightColor;
+      cursor: pointer;
+      opacity: 1;
+    }
 
-      &:hover{
-        background: fade(#FFF,80%) !important;
-        color: @appHighlightColor;
-        cursor: pointer;
-        opacity: 1;
-      }
 
+    i{
+      font-size: 20px;
+    }
+
+    &.cta-facebook-login{
+      background: fade(@facebookBlue,90%);
 
       i{
-        font-size: 20px;
-      }
-
-      &.cta-facebook-login{
-        background: fade(@facebookBlue,90%);
-        margin-right: 40px;
-
-        i{
-          margin-right: 5px;
-        }
-      }
-
-      &.cta-email-login{
-        background: fade(#5F5F5F,90%);
-
-        i{
-          margin-right: 12px;
-        }
+        margin-right: 5px;
       }
     }
-  }
 
-  .ri-bg-arrow{
-    position: fixed;
-    top: 30%;
-    width: 50px;
-    height: 85px;
+    &.cta-email-login{
+      background: fade(#5F5F5F,90%);
 
-    opacity: 0.8;
-    transition: 250ms all ease;
-    &:hover{
-      opacity: 1;
-      cursor: pointer;
-    }
-
-    &.ri-bg-arrow-left{
-      left: 20px;
-      background: url("../images/arrow-left.png") no-repeat;
-    }
-
-    &.ri-bg-arrow-right{
-      right: 20px;
-      background: url("../images/arrow-right.png") no-repeat;
+      i{
+        margin-right: 12px;
+      }
     }
   }
 
   .ri-discover-actions{
-    margin-top: 100px;
+    margin-top: 80px;
+  }
 
-    .ri-discover-badge{
-      width: 200px;
-      height: 200px;
-      display: inline-block;
-      color: #FFF;
-      margin: 0 25px;
-      border-radius: 10px;
-      background:fade(#000,65%);
-      transition: 250ms all ease;
+  .ri-discover-badge{
+    width:70%;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    background:fade(#000,65%);
+    text-align: center;
+    color: #FFF;
 
-      &:hover{
-        background:fade(#FFF,85%);
-        cursor: pointer;
+    &:hover{
+      background:fade(#FFF,85%);
+      cursor: pointer;
 
-        i, .ri-discover-badge-text{
-          transition: 450ms all ease;
-          color: @appHighlightColor;
-        }
+      i, .ri-discover-badge-text{
+        transition: 450ms all ease;
+        color: @appHighlightColor;
       }
+    }
 
-      .ri-discover-badge-text{
-        text-transform: uppercase;
-        font-size: 20px
-      }
+    .ri-discover-badge-text{
+      text-transform: uppercase;
+      font-size: 20px
+    }
 
-      i{
-        display: block;
-        margin: 25px 0;
-        font-size: 100px;
-        color: fade(#FFF,70%);
-      }
+    i{
+      display: block;
+      margin-bottom: 20px;
+      font-size: 100px;
+      color: fade(#FFF,70%);
     }
   }
 }
