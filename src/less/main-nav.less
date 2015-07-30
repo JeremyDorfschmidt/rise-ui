@@ -18,6 +18,18 @@
     display: inline-block;
     vertical-align:top;
   }
+
+  .mobile-menu-btn{
+    font-size: 35px;
+    margin: 7px 20px 0 20px;
+    display: none;
+
+    &:hover{
+      cursor: pointer;
+      color: @appHighlightColor;
+    }
+  }
+
   .ri-ise-logo{
     width: 67px;
     display: inline-block;
@@ -44,6 +56,45 @@
 
       &.active{
         border-bottom: 3px solid @appHighlightColor;
+      }
+    }
+  }
+}
+
+//Mobile Menu
+@media (max-width: 600px) {
+  .ri-app-nav-bar{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+
+    .mobile-menu-btn{
+      display: inline-block;
+    }
+
+    .ri-nav-menu{
+      height: 0;
+      display: block;
+      overflow: hidden;
+
+      &.mobile-menu-visible{
+        height: auto;
+      }
+
+      a{
+        display: block;
+        margin: 0;
+        padding: 15px 10px;
+
+        &:first-child{
+          border-top: 1px solid #CCC;
+        }
+
+        &.active{
+          border-bottom: 0;
+          border-left: 3px solid @appHighlightColor;
+        }
       }
     }
   }
