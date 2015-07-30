@@ -19,6 +19,7 @@ var MainNav = React.createClass({
           <Link to="photos" onClick={this.onMenuITemClick}>Photos</Link>
           <Link to="products" onClick={this.onMenuITemClick}>Products</Link>
           <Link to="techniques" onClick={this.onMenuITemClick}>Techniques</Link>
+          <Link to="calculator" onClick={this.onMenuITemClick}>Savings Calculator</Link>
         </div>
 
         <SearchBar/>

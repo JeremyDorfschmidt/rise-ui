@@ -13,7 +13,7 @@ import Photos from './js/pages/photos-page.js';
 import Products from './js/pages/products-page.js';
 import Techniques from './js/pages/techniques-page.js';
 import CategoryPage from './js/pages/category-page.js';
-
+import SavingsCalculatorPage from './js/pages/savings-calculator-page.js';
 
 var App = React.createClass({
 
@@ -42,6 +42,7 @@ var appRoutes = (
       <Route path="/products/:id" handler={CategoryPage}/>
     </Route>
     <Route name="techniques" path="/techniques" handler={Techniques}/>
+    <Route name="calculator" path="/calculator" handler={SavingsCalculatorPage}/>
   </Route>
 );
 
