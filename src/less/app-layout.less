@@ -34,12 +34,13 @@ body{
 
 //Overlay to darken background images
 .ri-app-bg-overlay{
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   background: fade(#000,12%);
+  background: linear-gradient(to bottom,  fade(#000,16%) 0% ,fade(#000,11%) 100%);
   transition: 300ms all;
   opacity: 0;
 
