@@ -1,11 +1,14 @@
 import React from 'react';
 import $ from 'jquery';
 import BasePage from './base-page.js';
+import PhotoFeed from '../components/photo-feed.js';
 
 var Photos = React.createClass({
   render:function(){
     return (
-      <BasePage name="photos">Photos Page</BasePage>
+      <BasePage name="photos">
+        <PhotoFeed/>
+      </BasePage>
     );
   },
   componentDidMount:function(){

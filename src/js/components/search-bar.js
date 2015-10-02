@@ -1,6 +1,6 @@
 var React = require('react');
 
-var CategoryList = React.createClass({
+var SearchBar = React.createClass({
   render:function(){
     return (
       <div className="search-bar">
@@ -11,4 +11,4 @@ var CategoryList = React.createClass({
   }
 });
 
-module.exports = CategoryList;
+module.exports = SearchBar;

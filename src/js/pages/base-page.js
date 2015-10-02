@@ -6,7 +6,7 @@ var SHOW_PAGE_TRANSITION_DELAY = 200;
 var BasePage = React.createClass({
 
   render:function(){
-    var pageClass = 'ri-page-content container ' + 'ri-' + this.props.name + '-page';
+    var pageClass = 'ri-page-content ' + 'ri-' + this.props.name + '-page';
     return (
       <div className={pageClass}>{this.props.children}</div>
     );

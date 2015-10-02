@@ -8,7 +8,9 @@ var Products = React.createClass({
   render:function(){
     return (
       <BasePage name="products">
-        <CategoryList/>
+        <div className="container">
+          <CategoryList/>
+        </div>
       </BasePage>
     );
   },
